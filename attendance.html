@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nexus</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <nav class="navbar">
+        <div class="nav-logo-container">
+            <img src="images/Nexus.png" alt="Company Logo" class="nav-logo">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="attendance.html" class="active">Attendance</a>
+        <a href="pin.html">Pin Board</a>
+        <a href="event-calendar.html">Event Calendar</a>
+    </nav>
+
+        <div class="main-container">
+        <h2>🗓️ Student Attendance Manager</h2>
+        
+        <div class="section date-picker-section">
+            <label for="attendance-date"><strong>Select Date:</strong></label>
+            <input type="date" id="attendance-date" onchange="loadDayData()">
+        </div>
+
+        <div class="section class-manager-section">
+            <h3>Manage Classes for This Day</h3>
+            <div class="input-group">
+                <input type="text" id="subject-input" placeholder="Enter subject name (e.g., Math)">
+                <button onclick="addClass()">➕ Add Class</button>
+            </div>
+            <div id="day-classes-list" class="classes-list">
+                </div>
+        </div>
+
+        <div class="section stats-section">
+            <h3>📊 Live Attendance Report</h3>
+            <div class="overall-badge">
+                Overall Score: <span id="overall-pct">0%</span>
+            </div>
+            <div id="subject-stats" class="subject-stats-grid">
+                </div>
+        </div>
+              <div class="section backup-section">
+    <h3>💾 Data Backup & Restore</h3>
+    <div class="backup-buttons">
+        <button onclick="exportData()" class="btn-backup">📥 Export Data (Backup)</button>
+        
+        <label for="import-file" class="custom-file-upload">📤 Import Data (Restore)</label>
+        <input type="file" id="import-file" accept=".json" onchange="importData(event)" style="display:none;">
+    </div>
+</div>
+    </div>
+
+    
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

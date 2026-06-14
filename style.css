@@ -1,0 +1,578 @@
+body{
+      background-color: #0f172a;
+      background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+      background-position: center;
+
+      margin: 0;
+}
+
+
+
+/* Sleek, modern header layout style */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.05em;
+    margin: 20px 0 0 0;
+    /* Clean white to metallic silver gradient */
+    background: linear-gradient(to right, #ffffff, #cbd5e1);
+    
+    /* Vendor prefix for Safari, Chrome, and older engines */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Standard property for future-proofing and strict compatibility */
+    background-clip: text;
+    
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Vibrant modern subtitle style */
+.p1 {
+    text-align: center;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #38bdf8; /* Vibrant neon sky blue */
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* Translucent premium glassmorphism card matrix design */
+.quote-card {
+    background: rgba(76, 71, 71, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px); /* Soft background blur effect */
+    -webkit-backdrop-filter: blur(4px);
+    
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+    font-style: italic;
+    
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Soft hover animation focus micro-interaction loop */
+.quote-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(56, 189, 248, 0.3); /* Soft blue edge glow on focus hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/*vertical left nav bar */
+
+.navbar{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    overflow-x: hidden;
+    background-color: #1e293b;
+      background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+      background-position: center;
+}
+
+.navbar a{
+    display: block;
+    color: #ecf0f1;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #5c7e98;
+      background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+      background-position: center;
+    color: #ffffff;
+}
+
+.navbar a.active {
+    background-color: #1abc9c;
+    color: white;
+}
+
+/*Main page*/
+
+.main-content{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+
+/*nac logo*/
+
+.navlogo-container{
+    text-align: center;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #34495e;
+}
+
+.nav-logo{
+    margin-left: 20px;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+
+.cards{
+    display: flexbox;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.cards .sec{
+    background-color: rgb(218, 218, 181);
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+    
+}
+
+
+
+
+.b{
+    display: flexbox;
+    padding: 10px;
+    margin: 20px;
+    border: 5px lightskyblue;
+    color:rgb(165, 186, 108);
+    font-family: cursive;
+}
+
+
+
+
+
+/*attendance */
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e293b;
+    padding: 20px;
+    margin: 0;
+}
+
+.main-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #8297b7 0%, #356759 100%);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+
+h2, h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.section {
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+}
+
+/* Date Input Styling */
+input[type="date"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b08dcf;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.input-group button {
+    background: #2563eb;
+    color: rgb(219, 173, 227);
+    border: none;
+    padding: 0 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Individual Class Rows */
+.class-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(211, 215, 196);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.btn-group button {
+    border: 1px solid #d69ed0;
+    padding: 6px 12px;
+    margin-left: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #959397;
+}
+
+/* Toggle Status Actions */
+button.p-active { background-color: #2ecc71 !important; color: white; }
+button.a-active { background-color: #e74c3c !important; color: white; }
+button.h-active { background-color: #3498db !important; color: white; }
+button.delete-btn { background: none; border: none; cursor: pointer; margin-left: 10px; }
+
+/* Stats Display */
+.overall-badge {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #cbd5e1;
+}
+
+/*atten next*/
+
+/* History Table Styling */
+.table-wrapper {
+    max-height: 300px; /* Limits height and allows vertical scrolling */
+    overflow-y: auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-weight: 600;
+    padding: 10px;
+    position: sticky;
+    top: 0; /* Keeps headers visible while scrolling */
+    border-bottom: 2px solid #cbd5e1;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Status Pill Badges */
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.badge.present { background-color: #dcfce7; color: #166534; }
+.badge.absent { background-color: #fee2e2; color: #991b1b; }
+.badge.holiday { background-color: #e0f2fe; color: #0369a1; }
+
+/* Inline Delete Icon Button */
+.inline-delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+}
+.inline-delete-btn:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/*backup*/
+
+.backup-section {
+    background: linear-gradient(135deg, #8297b7 0%, #356759 100%);
+    border: 1px solid #bbf7d0;
+}
+.backup-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.btn-backup, .custom-file-upload {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.custom-file-upload {
+    background-color: #2563eb; /* Blue for recovery */
+}
+.btn-backup:hover { background-color: #15803d; }
+.custom-file-upload:hover { background-color: #1d4ed8; }
+
+
+
+/*pin board*/
+
+
+
+.pinboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header-nav a {
+    color: #93b2d4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header-nav a:hover { text-decoration: underline; }
+
+.header-nav h2{
+    color: #2bbae6;
+}
+
+
+/* Control Panel Card UI */
+.note-creator {
+    background: linear-gradient(135deg, #8297b7 0%, #356759 100%);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+textarea {
+    background:rgb(187, 186, 173);
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    resize: none;
+    box-sizing: border-box;
+}
+.creator-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.creator-actions button {
+    background: #1e293b;
+    color: rgb(205, 183, 183);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Color Circle Pickers */
+.color-picker { display: flex; gap: 8px; }
+.color-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.color-dot.yellow { background: #fef08a; }
+.color-dot.blue   { background: #bfdbfe; }
+.color-dot.pink   { background: #fbcfe8; }
+.color-dot.green  { background: #bbf7d0; }
+.color-dot.orange  { background: #FFA500; }
+.color-dot.cyan  { background: #00FFFF; }
+.color-dot.red  { background: #FF0000; }
+.color-dot.active { border-color: #475569; }
+
+/* Pinboard Interactive Workspace Layout */
+.pinboard-canvas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Physical Sticky Note Card Model */
+.sticky-note {
+    width: 180px;
+    min-height: 180px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace; /* Classic typed note font */
+    font-size: 1.05rem;
+    color: #1e293b;
+    /* Subtle tilt effect for realism */
+    transform: rotate(-1.5deg);
+    transition: transform 0.2s;
+}
+.sticky-note:nth-child(even) { transform: rotate(2deg); }
+.sticky-note:hover { transform: scale(1.05) rotate(0deg); z-index: 10; }
+
+/* Top pushpin visual embellishment */
+.sticky-note::before {
+    content: "📌";
+    position: absolute;
+    top: -10px;
+    left: 45%;
+    font-size: 1.2rem;
+}
+
+.note-content {
+    word-break: break-word;
+    margin-top: 5px;
+}
+
+.delete-note-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+.delete-note-btn:hover { opacity: 1; }
+
+/*pin board backup*/
+
+/* Backup Control Panel Styling */
+.backup-panel {
+    background: linear-gradient(135deg, #8297b7 0%, #356759 100%);
+    max-width: 500px;
+    margin: 40px auto 10px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #cbd5e1;
+}
+
+.backup-panel h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #334155;
+    font-size: 1.1rem;
+}
+
+/* Button & Label Styling */
+.backup-panel button, 
+.backup-panel label {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s, transform 0.1s;
+}
+
+/* Export Button (Teal) */
+.backup-panel button {
+    background-color: #84c86c;
+    color: white;
+}
+
+.backup-panel button:hover {
+    background-color: #115e59;
+    transform: scale(1.02);
+}
+
+/* Restore Label/Button (Blue) */
+.backup-panel label {
+    background-color: #2563eb;
+    color: white;
+    margin-left: 10px;
+}
+
+.backup-panel label:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.02);
+}
+
+/* Active click states */
+.backup-panel button:active,
+.backup-panel label:active {
+    transform: scale(0.98);
+}
+

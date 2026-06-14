@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus - Event Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="eventstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo-container">
+            <img src="images/Nexus.png" alt="Company Logo" class="nav-logo">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="pin.html">Pin Board</a>
+        <a href="event-calendar.html" class="active">Event Calendar</a>
+    </nav>
+
+    <main class="main-content">
+        <div class="main-container text-nebula">
+            <h2>🗓️ Academic Event Calendar</h2>
+            
+            <div class="section">
+                <h3>Log New Deadline</h3>
+                
+                <div class="input-stack">
+                    <input type="text" id="event-title" placeholder="Event Title (e.g., Physics Midterm)">
+                    
+                    <div class="input-row">
+                        <input type="date" id="event-date">
+                        <select id="event-type">
+                            <option value="exam">🔴 Exam</option>
+                            <option value="quiz">🟡 Quiz</option>
+                            <option value="assignment">🔵 Assignment</option>
+                        </select>
+                    </div>
+                    
+                    <button onclick="addAcademicEvent()" class="add-event-btn">➕ Schedule Event</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Upcoming Deadlines</h3>
+                <div id="events-display-list" class="events-list-wrapper">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="calendar-script.js"></script>
+</body>
+</html>

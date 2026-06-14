@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📌 Study Pinboard Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo-container">
+            <img src="images/Nexus.png" alt="Company Logo" class="nav-logo">
+        </div>
+        <a href="index.html" >Home</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="pin.html" class="active">Pin Board</a>
+        <a href="event-calendar.html">Event Calendar</a>
+    </nav>
+
+    <div class="pinboard-container">
+        <div class="header-nav">
+            <h2>📌 Quick Reminders Pinboard</h2>
+        </div>
+
+        <div class="note-creator">
+            <textarea id="note-text" placeholder="Type a quick reminder... (e.g., Exam on Friday!)" rows="3"></textarea>
+            
+            <div class="creator-actions">
+                <div class="color-picker">
+                    <span class="color-dot yellow active" onclick="selectColor('#fef08a', this)"></span>
+                    <span class="color-dot blue" onclick="selectColor('#bfdbfe', this)"></span>
+                    <span class="color-dot pink" onclick="selectColor('#fbcfe8', this)"></span>
+                    <span class="color-dot green" onclick="selectColor('#bbf7d0', this)"></span>
+                    <span class="color-dot orange" onclick="selectColor('#FFA500', this)"></span>
+                    <span class="color-dot cyan" onclick="selectColor('#00FFFF', this)"></span>
+                    <span class="color-dot red" onclick="selectColor('#FF0000', this)"></span>
+                </div>
+                <button onclick="createNote()">📌 Pin It</button>
+            </div>
+        </div>
+
+        <div id="pinboard-canvas" class="pinboard-canvas">
+            </div>
+    </div>
+
+    <div class="backup-panel" style="margin-top: 30px; text-align: center; background: rgb(246, 207, 187); padding: 15px; border-radius: 8px;">
+    <h3>💾 Pinboard Backup Hub</h3>
+    <button onclick="exportPinboard()">📥 Export Data (Backup)</button>
+    
+    <label for="import-file" >📤 Import Data (Restore)</label>
+    <input type="file" id="import-file" accept=".json" onchange="importPinboard(event)" style="display:none;">
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
