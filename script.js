@@ -380,3 +380,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fire interval engine routine continuously every 3000ms (3 seconds)
     setInterval(rotateQuote, 8000);
 });
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
